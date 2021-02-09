@@ -1,0 +1,110 @@
+/*-------General-----*/
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    padding-top: 6vw;
+    text-align: center;
+    color: #535353;
+    font-size: 25px;
+    margin: 2vw;
+    padding-bottom: 2vw;
+}
+
+a {
+    text-align: center;
+}
+
+/*-------Table-----*/
+
+table {
+    width: 90%;
+    border: 1px solid rgb(1, 1, 1);
+    text-align: left;
+    padding: 8px;
+    margin-left: 5vw;
+    border-collapse: collapse;
+    height: auto;
+    margin-bottom: 1vw;
+}
+
+td, th {
+    border: 1px solid rgb(1, 1, 1);
+    text-align: left;
+    padding: 8px;
+    width: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f6ef;
+}
+
+#first_table_color td {
+    background-color: rgb(1, 1, 1);
+    border-style: inherit;
+    border-color: inherit;
+    color: white;
+}
+
+/*-------Button-----*/
+
+.button1 {
+    background-color: #535353;
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.button1:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #4e92bf;
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.button2:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color: #c65555;
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.button3:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/*-------Classes-----*/
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
