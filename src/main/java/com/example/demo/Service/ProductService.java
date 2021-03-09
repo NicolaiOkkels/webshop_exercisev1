@@ -22,8 +22,9 @@ public class ProductService {
         productRepository.delete(id);
     }
 
-    public void update(Product product){
+    public Product update(Product product){
         productRepository.update(product);
+        return product;
     }
 
     public List<Product> readAll(){
