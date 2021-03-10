@@ -47,13 +47,16 @@ public class ProductRestController {
     public ResponseEntity<Product> productUpdate(@PathVariable("id") long id, @RequestBody Product productDetails) {
         Product product = productService.getProduct(id);
 
-        product.setProductid(productDetails.getProductid());
-        product.setName(productDetails.getName());
-        product.setPrice(productDetails.getPrice());
+        if (product != null) {
+            product.setProductid(productDetails.getProductid());
+            product.setName(productDetails.getName());
+            product.setPrice(productDetails.getPrice());
 
-        final Product updatedProduct = productService.update(product);
-
-        return ResponseEntity.ok(updatedProduct);
+            final Product updatedProduct = productService.update(product);
+            return ResponseEntity.ok(updatedProduct);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
     }
 
 
